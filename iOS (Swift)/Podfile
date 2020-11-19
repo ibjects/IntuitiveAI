@@ -1,0 +1,25 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, ’10.0’
+ #Uncomment this line if you're using Swift
+ use_frameworks!
+
+target ‘IntuitiveAIStimulator’ do
+#use_frameworks!
+
+#pod 'MagicalRecord'
+#pod 'SAConfettiView'
+pod 'TPKeyboardAvoiding'
+#pod 'Alamofire'
+#pod 'SDWebImage'
+#pod 'GoogleMaps'
+#pod 'Firebase/Core'
+#pod 'Firebase/Auth'
+#pod 'Firebase/Messaging'
+#pod 'Firebase/Firestore'
+#pod 'Firebase/Functions'
+#pod 'GoogleSignIn'
+#pod 'SkyFloatingLabelTextField'
+#pod 'SideMenu'
+pod 'PopupDialog'
+
+end
