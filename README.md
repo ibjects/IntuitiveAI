@@ -1,19 +1,16 @@
 ---
-description: Provides a summary of full documentation of the IntuitiveAI.
+description: Welcome to the official documentation of intuitive AI.
 ---
 
 # Getting Started
 
-Welcome to the IntuitiveAI documentation. We have prepared this book to help understand how our IntuitiveAI algorithms work in details, so that it makes it easy for research/developers to expand this open-source algorithm.
+Intuitive AI is an experiment that was conducted to generate intuitive behavior in Artificial Intelligence and is still ongoing. In this official documentation, we are going to see how everything works step by step and also what are the future possible enhancements.
 
-The list given below should be followed in order so that it's easier to grasp the full knowledge of the IntuitiveAI.
+1. **Understanding Stimulator** In this section, we'll discuss in detail how the stimulator was developed what is the logic and rules behind it.
+2. **Understanding Generated Data** Data that is being generated on every gameplay is being stored in a particular manner. So in this section, we are going to have a look at how the generated data looks like.
+3. **EDA on Generated Data** Performing Exploratory Data Analysis \(EDA\) on the generated data. Putting it in shape and ensure that it is ready to be fed to a machine learning model.
+4. **Experiments with DataSet** We fed the data to a neural network with a hypothesis that this neural network should never stop because it'll never improve or get better accuracy. This and some other interesting experiments we did with the data are all mentioned in this section.
+5. **Future Enhancements** What is the future of this project and how can you advance this research.
 
-1. **Wumpus World Simulation \(WWS\)** Understand how the simulation works. Rules that are in place, why those rules exist, and what are the statistics behind it.
-2. **Understanding Generated Data** Data that is generated from each gameplay of WWS is stored in a particular manner. understand how it is structured and download data samples.
-3. **Algorithm** ★ Learn about the algorithm that IntuitiveAI is using and the new additions to them. We used MTCS but added our own factors to generate better intuitive results.
-4. **Examples of Algorithm Usage** We ran the algorithm on different common world problems to see how it works and also compared the results with other algorithms.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-**IntuitiveAI** is developed by [ibjects.com](http://ibjects.com).
 
