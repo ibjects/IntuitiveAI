@@ -325,7 +325,7 @@ function witeToDB(didUserFallInPit, didUserFindGold, didUserFindMonster, finalSc
     
     var db = firebase.firestore();
 
-    db.collection('fromweb').add({
+    db.collection('Games').add({
 
         didUserFallInPit: didUserFallInPit,
         didUserFindGold: didUserFindGold,
@@ -338,7 +338,9 @@ function witeToDB(didUserFallInPit, didUserFindGold, didUserFindMonster, finalSc
         userGamePlayPattern: userGamePlayPattern,
         userGamePlayPatternIndex: userGamePlayPatternIndex,
         logEntyDate: Date(),
-        userIP: userip
+        userIP: userip,
+        userDevice: 'Web',
+        playedBy: 'human'
     })
     .then(function(docRef) {
         newGame();
