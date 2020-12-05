@@ -53,7 +53,10 @@ function addValueToArray(index, value) {
 
 function newGame() {
     
-    document.querySelector('.scores').textContent = "Total Score: " + currentScore + " | Captured 👹 " + foundMonster + " times - Found 💰 " + foundGold + " times - Fall in 🕳️ " + foundPit + " times";
+    document.querySelector('.scores').textContent = " Total Score: " + currentScore + " | Captured 👹 " + foundMonster + " times - Found 💰 " + foundGold + " times - Fall in 🕳️ " + foundPit + " times ";
+    
+    document.querySelector('.scores').style.background = "#fff";
+    document.getElementById("container").style.background = generate();
     
     numberStrs = ['❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎'];
     tempArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -431,4 +434,33 @@ document.querySelector('.btn-15').addEventListener('click', function () {
     //document.querySelector('.btn-15').textContent = numberStrs[15];
     didUserWin(numberStrs[15],15);
 });
+
+
+//GENERATING BACKGROUD COLOR
+
+function generate() {
+
+  var hexValues = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e"];
+  
+  function populate(a) {
+    for ( var i = 0; i < 6; i++ ) {
+      var x = Math.round( Math.random() * 14 );
+      var y = hexValues[x];
+      a += y;
+    }
+    return a;
+  }
+  
+  var newColor1 = populate('#');
+  var newColor2 = populate('#');
+  var angle = Math.round( Math.random() * 360 );
+  
+  var gradient = "linear-gradient(" + angle + "deg, " + newColor1 + ", " + newColor2 + ")";
+  
+  document.getElementById("container").style.background = gradient;
+  //document.getElementById("output").innerHTML = gradient;
+  
+}
+
+document.onload = generate();
 

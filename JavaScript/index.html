@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="style.css" />
-        <title>Intuitive AI</title>
+        <title>IntuitiveAI Stimulator | by ibjects.com</title>
         <link rel="icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/intuitive-ai.appspot.com/o/favicon.png?alt=media&token=d915455b-1c80-480a-92dd-254856cd0827"/>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fb65c1a24f4b989"></script>
@@ -22,20 +22,20 @@
     <body>
         <center><section class="header">
             <img class="logo" src="https://firebasestorage.googleapis.com/v0/b/intuitive-ai.appspot.com/o/intuitiveai-simulator-logo.png?alt=media&token=1a0dc3ae-e42f-488c-b3a5-3375562e2673" alt="IntuitiveAI"><br />
-            <button class="m-btn" onClick="window.location.reload();">  🔄  </button>
-            <a href="https://youtu.be/teA7iGtf4SA" target="_blank"><button class="m-btn btn-help">❓</button></a>
-            <a href="https://ibjects.gitbook.io/intuitiveai/" target="_blank"><button class="m-btn btn-documentation">📖</button></a>
-            <a href="http://ibjects.com/" target="_blank"><button class="m-btn btn-website">🌐</button></a>
+            <button class="m-btn" onClick="window.location.reload();">🔄 New </button>
+            <a href="https://youtu.be/teA7iGtf4SA" target="_blank"><button class="m-btn btn-help">❓ Help</button></a>
+            <a href="https://ibjects.gitbook.io/intuitiveai/" target="_blank"><button class="m-btn btn-documentation">📖 Docs</button></a>
+            <a href="http://ibjects.com/" target="_blank"><button class="m-btn btn-website">🌐 Web</button></a>
 <!--
             <button class="m-btn btn-share">  ❤️  </button>
             <button class="m-btn btn-share">  🌐  </button><br /><br />
 -->
-            <p>Goal is to Find 👹 and an optional but encouraged task is to Find 💰 before finding the monster. Falling in 🕳️ will end in game lost.</p>
-            <p class="hints">Symbols: 💨 Wind - ✨ Glitter - 👃 Smell - 👹 Monster - 💰 Gold - 🕳️ Pit - ❎ Nothing</p><br />
+            <p class="about">Goal is to Find 👹 and an optional but encouraged task is to Find 💰 before finding the monster. Falling in 🕳️ will end in game lost.<br />
+            Symbols: 💨 Wind - ✨ Glitter - 👃 Smell - 👹 Monster - 💰 Gold - 🕳️ Pit - ❎ Nothing </p><br />
         </section>
 
 
-        <main>
+        <main id="container">
             <section class="main-game">
                 <input type="hidden" name="ip" value="" id="ip" />
                 <button class="btn btn-0"></button>
@@ -54,11 +54,11 @@
                 <button class="btn btn-13"></button>
                 <button class="btn btn-14"></button>
                 <button class="btn btn-15"></button><br /><br />
-                <p class="scores"></p>
+                <mark><p class="scores"></p></mark>
             </section>
             </main>
             <section class="footer">
-                <p>© 2020 ibjects.com</p>
+                <p>IntuitiveAI Stimulator v1.3 | © 2020 ibjects.com</p>
         </section>
             </center>
         <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
