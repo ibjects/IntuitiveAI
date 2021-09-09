@@ -18,14 +18,15 @@ var userGamePlayPattern = [];
 var userGamePlayPatternIndex = [];
 
 firebase.initializeApp({
-    apiKey: "AIzaSyB6Y90mcjpTH9R68ezwVibdRSN6afkHEgw",
-    authDomain: "intuitive-ai.firebaseapp.com",
-    databaseURL: "https://intuitive-ai.firebaseio.com",
-    projectId: "intuitive-ai",
-    storageBucket: "intuitive-ai.appspot.com",
-    messagingSenderId: "653220018768",
-    appId: "1:653220018768:web:d1e3cc951196e3f3406f55",
-    measurementId: "G-YWTXQCWZ6T"
+//Add your firebase credentials here
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 })
 
 function shuffle(array) {
