@@ -1,7 +1,7 @@
 # IntuitiveAI
 The official Repository of Intuitive AI by ibjects.com <br />
 Play Simulator: https://intuitive-ai.firebaseapp.com/ <br />
-Official documentation: https://ibjects.gitbook.io/intuitiveai/
+Official documentation: [https://ibjects-app.gitbook.io/intuitiveai/](https://ibjects-app.gitbook.io/intuitiveai/)
 
 ## To create your own simulator on web
 1. Create a new firebase project and configure it for the web.
