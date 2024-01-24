@@ -1,4 +1,8 @@
-// THis scripts works perfectly. All you have to do is to create a new firebase project and put your credentaials in this file and that's it you have your simulator ready.
+// This is our old JS script of the simulator, it works perfectly fine.
+// To get data in your database
+// Create a new firebase project and put your credentaials in initializeApp
+// Create a collection named Games
+// Start getting your own intuitive simulator games data in the firestore
 
 var numbers = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 var numberStrs = ['❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎', '❎'];

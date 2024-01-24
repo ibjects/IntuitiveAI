@@ -35,11 +35,6 @@
                         
                       </span>
                       Documentation</button></a> 
-                    <a href="https://github.com/ibjects/IntuitiveAI" target="_blank"><button class="m-btn btn-website"><span style="font-size: 12px; color: black;">
-                        <i class="fab fa-github"></i>
-                        
-                      </span>
-                      Github Repo</button></a>
                       <a href="https://colab.research.google.com/drive/1rwPrzAS6J2lW0RVjqGaLpm4KaPwGGVdi?usp=sharing" target="_blank"><button class="m-btn btn-website"><span style="font-size: 12px; color: black;">
                         <i class="fas fa-book-open"></i>
                         
@@ -50,73 +45,61 @@
                         
                       </span>
                       Public Data Sheet</button></a>
+                    <a href="https://github.com/ibjects/IntuitiveAI" target="_blank"><button class="m-btn btn-website"><span style="font-size: 12px; color: black;">
+                        <i class="fab fa-github"></i>
+                        
+                      </span>
+                      Github Repo</button></a>
                       <a href="https://www.linkedin.com/company/ibjects/" target="_blank"><button class="m-btn btn-website"><span style="font-size: 12px; color: black;">
                         <i class="fab fa-linkedin"></i>
                         
                       </span>
                       Let's Connect</button></a>
-        <!--
-                    <button class="m-btn btn-share">  ❤️  </button>
-                    <button class="m-btn btn-share">  🌐  </button><br /><br />
-        -->
-                    <!-- <p class="about">Goal is to Find 👹 and an optional but encouraged task is to Find 💰 before finding the monster. Falling in 🕳️ will end in game lost.<br />
-                    Symbols: 💨 Wind - ✨ Glitter - 👃 Smell - 👹 Monster - 💰 Gold - 🕳️ Pit - ❎ Nothing </p><br /> -->
-                <!-- </section> -->
                 </center>
                 <center><p style="color: white; display: inline-block;">© 2024 <a href="https://ibjects.com" target="_blank">ibjects.com</a> </p></center>
 
                 <p><br /></p>
             </div>
-          </div>
+        </div>
 
+        <h1>Play IntuitiveAI Simulator</h1>
+        <pre id="score">Score this session: 0</pre>
+        <div class="game-section">
+              <div class="grid-container">
+                  <div id="grid" class="grid-container">
+                      <!-- Grid items will be added here -->
+                  </div>
+              </div>
+        </div>
+        <button id="newGameButton" class="m-btn btn-share">🕹️ New Game</button><br />
+        <!-- <p class="p-left-aligned"> -->
+          <div class="instructions">
+            <h4>Instructions & How To Play</h4>
+            <p><strong>Objective:</strong> Find the Monster (👹) to win.</p>
+            <p><strong>Avoid Pits:</strong> Falling into a Pit (🕳️) ends the game (lose).</p>
+            <p><strong>Find Gold:</strong> Discovering Gold (💰) before the Monster adds a bonus point.</p>
+            <p><strong>Make Choices:</strong> Click any box to reveal its contents or hint.</p>
+            <p><strong>Use Hints*:</strong> Boxes reveal hints about nearby elements.</p>
+            <ul>
+                <li><p>Breeze (💨): Adjacent to Pits.</p></li>
+                <li><p>Smell (👃): Monster nearby**.</p></li>
+                <li><p>Glitter (✨): Gold nearby.</p></li>
+                <li><p>Nothing (❎): Hints nearby.</p></li>
+            </ul>
+            <p><strong>Game Ends:</strong> When you find the Monster or fall into a Pit.</p>
+        <div class="divider-light"></div>
+            <p>
+            <b>Note:</b> This is just a game play and it does not record any of your data.
+            <br /> A session is active until you refresh this page or close the tab or browser<br /><br />
+            * Combined hints like 👃✨ indicate multiple items nearby, such as a Monster (👹) and Gold (💰).<br />
+            *** 'nearby' refers to boxes directly to the left, right, top, or bottom - not diagonally adjacent.
+          </p>
+        </div>
+        <!-- </p> -->
 
-
-          <!-- H E R O -->
-  <!-- <section id="hero">
-    <div class="container">
-      <div class="row">
-        <div>
-          <img src="images/intuitive-ai-app.png" class="img-fluid" alt="IntuitiveAI App">
-        </div> -->
-        <!-- <div class="col-md-7 content-box hero-content">
-          <span>BepBop Utopia</span>
-          <h1>A gamified world of Utopia where <b>actions change lives of people in real world!</b></h1>
-          <p>There is nothing like this out there and it's coming real soon! Try out the <b>beta</b> today...</p>
-          <a href="https://forms.gle/y9npNz8EzTt3FYkd9" target="_blank" class="btn btn-regular">Try Out Beta Version</a>
-        </div> -->
-      <!-- </div>
-    </div>
-  </section> -->
-  <!-- E N D  H E R O -->
-
-        <!-- <main id="container">
-            <section class="main-game">
-                <input type="hidden" name="ip" value="" id="ip" />
-                <button class="btn btn-0"></button>
-                <button class="btn btn-1"></button>
-                <button class="btn btn-2"></button>
-                <button class="btn btn-3"></button><br />
-                <button class="btn btn-4"></button>
-                <button class="btn btn-5"></button>
-                <button class="btn btn-6"></button>
-                <button class="btn btn-7"></button><br />
-                <button class="btn btn-8"></button>
-                <button class="btn btn-9"></button>
-                <button class="btn btn-10"></button>
-                <button class="btn btn-11"></button><br />
-                <button class="btn btn-12"></button>
-                <button class="btn btn-13"></button>
-                <button class="btn btn-14"></button>
-                <button class="btn btn-15"></button><br /><br />
-                <mark><p class="scores"></p></mark>
-            </section>
-            </main> -->
-            <!-- <section class="footer">
-                
-        </section> -->
-            <!-- </center> -->
         <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="game.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
         <script src="https://kit.fontawesome.com/35dffb2c43.js" crossorigin="anonymous"></script>
         
