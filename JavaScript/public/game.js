@@ -52,7 +52,7 @@ function setupGrid() {
   indexOfPits.forEach((pitIndex) => {
     grid[pitIndex] = "🕳️";
   });
-  console.log("grid: ", grid);
+
   return grid;
 }
 
