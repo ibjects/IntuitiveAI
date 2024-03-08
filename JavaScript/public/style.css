@@ -4,6 +4,11 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #f6f8f9;
+}
+
 h2 {
   font-size: 44px;
   font-weight: 700;
